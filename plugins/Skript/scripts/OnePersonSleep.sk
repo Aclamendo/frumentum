@@ -1,15 +1,42 @@
 options:
-	version: 1.0.0
+	version: 2.0.0
 
 on script load:
 	send "&b[Skript] OnePersonSleep &6{@version} &bLoaded" to console
+	set {NoSleep} to true
+
+command /nosleep [<text>]:
+	permission: skript.nosleep
+	cooldown: 1 hour
+	cooldown message: &cYou must wait &e%remaining% &cbefore doing that again!
+	cooldown bypass: skript.nosleep.bypass
+	trigger:
+		if arg-1 is not set:
+			set {NoSleep} to false
+			broadcast "&e&lThis night can no longer be skipped!"
+			wait 10 minutes
+			set {NoSleep} to true
+		else if arg-1 is set:
+			if arg-1 is "undo":
+				if player has permission "skript.nosleep.undo":
+					set {NoSleep} to true
+					broadcast "&e&lThis night can now be skipped again!"
+				else:
+					send "You do not have permission to do that!"
+			else:
+				send "&cUnknown argument!"
 
 on bed enter:
-#	cancel event
-	wait 40 ticks
-	set time to day
-	broadcast "&b%player% &e&lhas slept, and skipped the night"
-	if event-world is "survival":
-		execute console command "/weather survival sun"
-	else if event-world is "dumb":
-		execute console command "/weather dumb sun"
+	if {NoSleep} is true:
+		wait 40 ticks
+		set time to day
+		broadcast "&b%player% &e&lhas slept, and skipped the night"
+		if event-world is "survival":
+			if is raining or thundering in "survival":
+				execute console command "/weather survival sun"
+		else if event-world is "dumb":
+			if is raining or thundering in "dumb":
+				execute console command "/weather dumb sun"
+	else if {NoSleep} is false:
+		cancel event
+		send "&cYou cannot skip the night right now!"

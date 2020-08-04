@@ -1,76 +1,140 @@
 options:
-    version: 1.0.0
-    gravy1: "&6/gravy list&f: List all grave locations"
-    nick1: "&6/nick&f: Set your nickname"
-    features1: "&6/features&f: Lists server features"
-    green1: "&5Greentext&f: Begin chat messages with '>' to turn them green"
-    vein0: "&5Veinminer&f: Crouch when mining to break entire vein or tree | /help veinminer"
-    vein1: "&6/veinminer &dblocklist &b<tool> &dlist&f: List blocks that can be veinmined"
-    vein2: "&6/veinminer &dtoggle &b<tool>&f: Toggle veinminer on or off&7(tool is optional)"
-    imagemap0: "&4Imagemap&f: /help imagemap"
-    imagemap1: "&6/imagemap &b<imageName>&f: to place an image"
-    imagemap2: "&6/imagemap &b<imageName> &dscale &b<width> <height>&f: to scale the image up or down"
-    imagemap3: "&6/imagemap &b<imageName> &ddownload &b<directURL>&f: to download an image from the web"
-    link0: "&4Bedrock Account&f: /help bedrock"
-    link1: "&6/linkaccount &b<bedrockName>&f: to link accounts"
-    link2: "&6/unlinkaccount &b<bedrockName>&f to unlink accounts"
-    meme0: "&4Meme&f: /help meme"
-    meme1: "&6/meme&f: Sends a random PSA"
-    meme2: "&6/meme &b<name>&f: Sends a random PSA with the name&7(does not need to be a player)"
-    meme3: "&6/psa &b<message>&f: Sends a PSA of your own&7(compatible with formatting codes)"
-    meme4: "&6/memeidea &b<message&f: Suggests a message to be added to /meme"
-    item0: "&4Itemdata&f: /help itemdata"
-    item1: "&6/itemname &b<newName>&f: Set held items name&7(compatible with formatting codes)"
-    item2: "&6/itemlore &dset &b<LineNumber> <newLore>&f: Changes the lore of the desired line"
-    item3: "&6/itemlore &dremove &b<lineNumber&f: Removes the lore of the desired line"
+	version: 2.0.0
+	
+	MainPageCount: 2
+	#Simple Commands
+	gravy1: "&6/gravy list&f: List all grave locations"
+	nick1: "&6/nick&f: Set your nickname"
+	features1: "&6/features&f: Lists server features"
+	nosleep1: "&6/nosleep&f: prevent the night from being skipped"
+
+	#Feature Help
+	green1: "&5Greentext&f: Begin chat messages with '>' to turn them green"
+	sleep1: "&5One Person Sleep&f: Only one person needs to sleep to skip the night"
+	vein0: "&5Veinminer&f: Crouch when mining to break entire vein or tree | /help veinminer"
+	vein1: "&6/veinminer &dblocklist &b<tool> &dlist&f: List blocks that can be veinmined"
+	vein2: "&6/veinminer &dtoggle &b<tool>&f: Toggle veinminer on or off&7(tool is optional)"
+
+	#Sub Pages
+	dim0: "&4New Dimension&f: /help dimension"
+	dim1: "&6Portal Frame&f: Stone Bricks"
+	dim2: "&6Lighter&f: Blaze Rod"
+	dim3: "&c&lWarning!&r: This is an incredibly dangerous environment!"
+
+	imagemap0: "&4Imagemap&f: /help imagemap"
+	imagemap1: "&6/imagemap &b<imageName>&f: to place an image"
+	imagemap2: "&6/imagemap &b<imageName> &dscale &b<width> <height>&f: to scale the image up or down"
+	imagemap3: "&6/imagemap &b<imageName> &ddownload &b<directURL>&f: to download an image from the web"
+
+	link0: "&4Bedrock Account&f: /help bedrock"
+	link1: "&6/linkaccount &b<bedrockName>&f: to link accounts"
+	link2: "&6/unlinkaccount &b<bedrockName>&f to unlink accounts"
+
+	meme0: "&4Meme&f: /help meme"
+	meme1: "&6/meme&f: Sends a random PSA"
+	meme2: "&6/meme &b<name>&f: Sends a random PSA with the name&7(does not need to be a player)"
+	meme3: "&6/psa &b<message>&f: Sends a PSA of your own&7(compatible with formatting codes)"
+	meme4: "&6/memeidea &b<message&f: Suggests a message to be added to /meme"
+
+	item0: "&4Itemdata&f: /help itemdata"
+	item1: "&6/itemname &b<newName>&f: Set held items name&7(compatible with formatting codes)"
+	item2: "&6/itemlore &dset &b<LineNumber> <newLore>&f: Changes the lore of the desired line"
+	item3: "&6/itemlore &dremove &b<lineNumber&f: Removes the lore of the desired line"
 
 on script load:
-    send "&b[Skript] CustomHelpCommand &6{@version} &bLoaded" to console
+	send "&b[Skript] CustomHelpCommand &6{@version} &bLoaded" to console
 
-command /help [<text>] [<number>]:
-    permission: skript.help
-    trigger:
-        set {_MPage} to 1
-        if arg-1 is not set:
-            set {_CPage} to 1
-            send "&e---- &6Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-            send {@imagemap0}
-            send {@link0}
-            send {@meme0}
-            send {@item0}
-            send {@vein0}
-            send {@green1}
-            send {@gravy1}
-            send {@nick1}
-            send {@features1}
-        else:
-            if arg-1 is "imagemap":
-                set {_CPage} to 1
-                send "&e---- &6Imagemap Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-                send {@imagemap1}
-                send {@imagemap2}
-                send {@imagemap3}
-            else if arg-1 is "bedrock":
-                set {_CPage} to 1
-                send "&e---- &6Bedrock Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-                send "&6You can link a Bedrock &6account to your Java account"
-                send {@link1}
-                send {@link2}
-            else if arg-1 is "meme":
-                set {_CPage} to 1
-                send "&e---- &6Meme Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-                send {@meme1}
-                send {@meme2}
-                send {@meme3}
-                send {@meme4}
-            else if arg-1 is "itemdata":
-                set {_CPage} to 1
-                send "&e---- &6Itemdata Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-                send {@item1}
-                send {@item2}
-                send {@item3}
-            else if arg-1 is "veinminer":
-                set {_CPage} to 1
-                send "&e---- &6Veinminer Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-                send {@vein1}
-                send {@vein2}
+command /help [<text>] [<text>]:
+	permission: skript.help
+	trigger:
+		set {_MPage} to 1
+		if arg-1 is not set:
+			#if arg-2 is set:
+			#	if arg-2 is not 1:
+			#		if arg-2 is 2:
+			#			set {_CPage} to 2
+			#			send "&e---- &6Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+			#			send {@nick1}
+			#			send {@features1}
+				#else:
+				#	set {_CPage} to 1
+				#	send "&e---- &6Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				#	send {@dim0}
+				#	send {@imagemap0}
+				#	send {@link0}
+				#	send {@meme0}
+				#	send {@item0}
+				#	send {@vein0}
+				#	send {@sleep1}
+				#	send {@green1}
+				#	send {@gravy1}
+			set {_MPage} to {@MainPageCount}
+			set {_CPage} to 1
+			send "&e---- &6Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+			send {@dim0}
+			send {@imagemap0}
+			send {@link0}
+			send {@meme0}
+			send {@item0}
+			send {@vein0}
+			send {@sleep1}
+			send {@green1}
+			send {@gravy1}
+		else:
+			if arg-1 is "1":
+				set {_MPage} to {@MainPageCount}
+				set {_CPage} to 1
+				send "&e---- &6Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				send {@dim0}
+				send {@imagemap0}
+				send {@link0}
+				send {@meme0}
+				send {@item0}
+				send {@vein0}
+				send {@sleep1}
+				send {@green1}
+				send {@gravy1}
+			else if arg-1 is "2":
+				set {_MPage} to 2
+				set {_CPage} to 2
+				send "&e---- &6Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				send {@nosleep1}
+				send {@nick1}
+				send {@features1}
+
+			else if arg-1 is "imagemap":
+				set {_CPage} to 1
+				send "&e---- &6Imagemap Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				send {@imagemap1}
+				send {@imagemap2}
+				send {@imagemap3}
+			else if arg-1 is "bedrock":
+				set {_CPage} to 1
+				send "&e---- &6Bedrock Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				send "&6You can link a Bedrock &6account to your Java account"
+				send {@link1}
+				send {@link2}
+			else if arg-1 is "meme":
+				set {_CPage} to 1
+				send "&e---- &6Meme Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				send {@meme1}
+				send {@meme2}
+				send {@meme3}
+				send {@meme4}
+			else if arg-1 is "itemdata":
+				set {_CPage} to 1
+				send "&e---- &6Itemdata Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				send {@item1}
+				send {@item2}
+				send {@item3}
+			else if arg-1 is "veinminer":
+				set {_CPage} to 1
+				send "&e---- &6Veinminer Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				send {@vein1}
+				send {@vein2}
+			else if arg-1 is "dimension":
+				set {_CPage} to 1
+				send "&e---- &6Dimension Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+				send {@dim1}
+				send {@dim2}
+				send {@dim3}
