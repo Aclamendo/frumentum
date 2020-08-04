@@ -23,4 +23,4 @@ command /features:
         send "&aAuto fishing is back!"
         send "&aShulker boxes don't despawn"
         send "&aGreentext in chat"
-		send "&aNew Dimension!"
+        send "&aNew Dimension!"
