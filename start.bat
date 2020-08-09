@@ -1,3 +1,3 @@
 @ECHO OFF
-java -Xms4000M -Xmx7000M -jar paper-131.jar nogui
+java -Xms4000M -Xmx7000M -jar paper-134.jar nogui
 pause

@@ -32,7 +32,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "minecraft:gameplay/fishing/treasure"
+          "name": "minecraft:gameplay/fishing/disc"
         }
       ],
       "conditions": [
