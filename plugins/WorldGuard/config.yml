@@ -51,6 +51,7 @@ protection:
     remove-infinite-stacks: false
     disable-xp-orb-drops: false
     disable-obsidian-generators: false
+    use-max-priority-association: false
 gameplay:
     block-potions: []
     block-potions-overly-reliably: false
@@ -162,3 +163,7 @@ blacklist:
             path: worldguard/logs/%Y-%m-%d.log
             open-files: 10
 custom-metrics-charts: true
+disable-permission-cache: false
+turtle-egg:
+    disable-creature-trampling: false
+    disable-player-trampling: false

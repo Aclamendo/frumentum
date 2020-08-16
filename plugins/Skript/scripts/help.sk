@@ -12,8 +12,9 @@ options:
 	green1: "&5Greentext&f: Begin chat messages with '>' to turn them green"
 	sleep1: "&5One Person Sleep&f: Only one person needs to sleep to skip the night"
 	vein0: "&5Veinminer&f: Crouch when mining to break entire vein or tree | /help veinminer"
-	vein1: "&6/veinminer &dblocklist &b<tool> &dlist&f: List blocks that can be veinmined"
-	vein2: "&6/veinminer &dtoggle &b<tool>&f: Toggle veinminer on or off&7(tool is optional)"
+	vein1: "&6/veinminer &dmode &b<sneak|stand|always>&f: Change what activates veinminer"
+	vein2: "&6/veinminer &dblocklist &b<tool> &dlist&f: List blocks that can be veinmined"
+	vein3: "&6/veinminer &dtoggle &b<tool>&f: Toggle veinminer on or off&7(tool is optional)"
 
 	#Sub Pages
 	dim0: "&4New Dimension&f: /help dimension"
@@ -132,6 +133,7 @@ command /help [<text>] [<text>]:
 				send "&e---- &6Veinminer Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
 				send {@vein1}
 				send {@vein2}
+				send {@vein3}
 			else if arg-1 is "dimension":
 				set {_CPage} to 1
 				send "&e---- &6Dimension Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
