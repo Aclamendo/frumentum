@@ -78,3 +78,6 @@ In no particular order
 - ProtocolLib
   - [Spigot](https://www.spigotmc.org/resources/protocollib.1997/)
   - [Donate](https://paypal.me/dmulloy2)
+- XpBottles
+  - [Github](https://github.com/CodedRedGIT/XpBottles)
+  - [Spigot](https://www.spigotmc.org/resources/xpbottles-convert-exp-into-bottles.69233/)
