@@ -1,10 +1,10 @@
 # Plugins
 
-This folder contains plugins, as well as plugin data (config, playerdata, etc.)
-Playerdata is often placed in .gitignore, as it can change by the minute
-Some data files will be automatically modified on startup, it is not important to have the latest version of these particular files
+This folder contains plugins, as well as plugin data (config, playerdata, etc.)  
+Playerdata is often placed in .gitignore, as it can change by the minute  
+Some data files will be automatically modified on startup, it is not important to have the latest version of these particular files  
 
-# List of Plugins
+## Plugin Manifest
 
 In no particular order
 
