@@ -13,6 +13,7 @@
 verbose: false
 config-version: 20
 settings:
+  track-plugin-scoreboards: false
   max-joins-per-tick: 3
   player-auto-save-rate: -1
   max-player-auto-save-per-tick: -1
@@ -76,6 +77,7 @@ messages:
     authentication-servers-down: Bruh, mojang servers are down
 world-settings:
   default:
+    zombies-target-turtle-eggs: true
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
     portal-create-radius: 16

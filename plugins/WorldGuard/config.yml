@@ -24,6 +24,8 @@ regions:
     location-flags-only-inside-regions: false
     max-region-count-per-player:
         default: 7
+    disable-bypass-by-default: false
+    announce-bypass-status: false
 auto-invincible: false
 auto-invincible-group: false
 auto-no-drowning-group: false
