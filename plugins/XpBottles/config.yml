@@ -37,3 +37,6 @@ permission:
 custom-drop-name:
   enabled: true
   name: '&d&lExp Bottle'
+use-static-uuid:
+  enabled: true
+  do-not-edit-this: 48faa93b-40bf-4ab6-8727-fda33cc082d7

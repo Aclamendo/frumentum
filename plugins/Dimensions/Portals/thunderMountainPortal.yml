@@ -1,6 +1,7 @@
 Enable: true
 DisplayName: Thunder Mountain Portal
 Portal:
+  Horizontal: false
   Block:
     Material: stone_bricks
     Face: all

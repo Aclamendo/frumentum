@@ -82,6 +82,8 @@ Main:
   - '[skellett] map cursor direction (of|for) [[map][ ]cursor] %mapcursor%'
   - draw [map] cursor %string% pointing %number% at [coordinate[s]] [x] %number%(,|
     and) [y] %number% on [skellett] map %map%
+  - '[skellett] map pixel [colo[u]r] at [coordinate[s]] [x] %number%(,| and) [y] %number%
+    (on|in) [skellett] map %map%'
   Fishing:
   - '[the] [fish[ing]] (xp|experience) [earned]'
   - '[skellett] caught (fish|item|entity)'

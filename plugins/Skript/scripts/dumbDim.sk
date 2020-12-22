@@ -24,42 +24,21 @@ options:
 on script load:
 	send "&b[Skript] ThunderMountainSkript &6{@version} &bLoaded" to console
 
-#on right click:
-#	if event-world is "dumb":
-#		if event-block is any bed:
-#			cancel event
-#			make an explosion of force 5 at event-block with fire
-#			strike lightning at event-block
-#	if event-block is spruce log:
-#		if block below event-block is glass:
-#			if block above event-block is spruce leaves:
-#				if player is in world "survival":
-#					send "%event-player% used portal at %event-location% in %event-world%" to console
-#					execute console command "/mvtp %event-player% dumb"
-#					play sound "ambient.soul_sand_valley.mood" with volume 10 at the player
-#				else if player is in world "dumb":
-#					send "%event-player% used portal at %event-location% in %event-world%" to console
-#					execute console command "/mvtp %event-player% survival"
-#					play sound "ambient.soul_sand_valley.mood" with volume 10 at the player
-#			else:
-#				stop
-#		else:
-#			stop
-#	else:
-#		stop
-
 on spawn:
 	if event-world is "dumb":
 		apply strength 4 to event-entity for 900 seconds
-#		apply fire resistance to event-entity for 900 seconds
 		apply absorption to event-entity for 900 seconds
 		apply health boost to event-entity for 900 seconds
 		heal event-entity
 		equip event-entity with any armor
-		if event-entity is creeper:
-			chance of 10%:
-				strike lightning at event-entity
-				apply potion of fire resistance to event-entity for 10 seconds
+	else:
+		stop
+
+on spawn of creeper:
+	if event-world is "dumb":
+		chance of 10%:
+			strike lightning at event-entity
+			apply potion of fire resistance to event-entity for 10 seconds
 	else:
 		stop
 
@@ -87,26 +66,11 @@ on player world change:
 	if world is "survival":
 		if previous world is "dumb":
 			play sound "ambient.soul_sand_valley.mood" with volume 10 at the player
-			#execute console command "/effect clear %event-player%"
-			
-	#This section applies a cooldown to portal use when exiting "dumb"
-			
-#			set {%player%PortalUse} to true
-#			wait 3 seconds
-#			set {%player%PortalUse} to false
-
-# This section prevents improper portal use
-	#Nether portals cannot be made in "dumb"
-	#Nether pottals cannot be used for 3 seconds after coming from "dumb"
 
 on portal create:
 	if event-world is "dumb":
 		cancel event
 
 on player portal:
-#	if {%player%PortalUse} is true:
-#		send "portal cooldown" to player
-#		cancel event
 	if event-world is "dumb":
-#		send "stopped travel" to player
 		cancel event

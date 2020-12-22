@@ -1,3 +1,7 @@
+Debug:
+  Level: 0
+GenerateNewWorlds: false
+EnableNonLivingEntitiesTeleportation: false
 ConsumeItems: false
 NetherPortalEffect: true
 DebugLevel: 0
