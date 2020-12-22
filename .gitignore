@@ -38,8 +38,8 @@ plugins/Dimensions/PlayerData/
 plugins/Dimensions/Portals/portalLocations.json
 
 #plugin files
-plugins/DiscordSRV-Build-1.19.1.jar
-plugins/Dynmap-3.1-beta-1-spigot.jar
+plugins/DiscordSRV-Build-1.21.0.jar
+plugins/Dynmap-3.1-beta5-spigot.jar
 
 #plugin data
 plugins/dynmap/dumb.pending
