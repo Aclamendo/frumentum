@@ -5,14 +5,15 @@
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
 # 
-# Discord: https://paperdiscord.emc.gs
-# IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
+# Discord: https://discord.gg/papermc
+# IRC: #paper @ irc.esper.net ( https://webchat.esper.net/?channels=paper ) 
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
 verbose: false
 config-version: 20
 settings:
+  fix-entity-position-desync: true
   track-plugin-scoreboards: false
   max-joins-per-tick: 3
   player-auto-save-rate: -1
@@ -40,6 +41,8 @@ settings:
     enable: true
     threads: -1
   spam-limiter:
+    recipe-spam-increment: 1
+    recipe-spam-limit: 20
     tab-spam-increment: 1
     tab-spam-limit: 500
   book-size:
@@ -77,6 +80,9 @@ messages:
     authentication-servers-down: Bruh, mojang servers are down
 world-settings:
   default:
+    should-remove-dragon: false
+    seed-based-feature-search: true
+    fix-climbing-bypassing-cramming-rule: false
     zombies-target-turtle-eggs: true
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
@@ -133,6 +139,7 @@ world-settings:
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 1
     anti-xray:
+      lava-obscures: false
       enabled: false
       engine-mode: 1
       chunk-edge-mode: 2
@@ -157,6 +164,7 @@ world-settings:
     generator-settings:
       flat-bedrock: false
     game-mechanics:
+      fix-curing-zombie-villager-discount-exploit: true
       nerf-pigmen-from-nether-portals: false
       disable-sprint-interruption-on-attack: false
       disable-chest-cat-detection: false
@@ -211,3 +219,9 @@ world-settings:
       maximum: 0.0
     viewdistances:
       no-tick-view-distance: -1
+    wandering-trader:
+      spawn-minute-length: 1200
+      spawn-day-length: 24000
+      spawn-chance-failure-increment: 25
+      spawn-chance-min: 25
+      spawn-chance-max: 75
