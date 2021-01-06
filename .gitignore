@@ -34,7 +34,6 @@ plugins/Multiverse-Inventories/players/
 plugins/Multiverse-Inventories/groups/
 plugins/gravy/graves.yml
 plugins/gravy/items.yml
-plugins/Dimensions/PlayerData/
 plugins/Dimensions/Portals/portalLocations.json
 
 #plugin files
