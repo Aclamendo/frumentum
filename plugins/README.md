@@ -12,9 +12,6 @@ In no particular order
   - [Github](https://github.com/DiscordSRV/DiscordSRV)
   - [Spigot](https://www.spigotmc.org/resources/discordsrv.18494/)
   - [Donate](https://scarsz.me/donate)
-- Dynmap
-  - [Spigot](https://www.spigotmc.org/resources/dynmap.274/)
-  - [Donate](https://www.paypal.com/donate/?token=whToOK0MKcoqwqEoe030VT3jhuJMyHxwLkY9c1N3ggohrQ0tFFcW1Mov9DS0exQote3DD0&country.x=US&locale.x=US)
 - EssentialsX & EssentialsX Spawn
   - [Github](https://github.com/EssentialsX/Essentials)
   - [Website](https://essentialsx.net/downloads.html)

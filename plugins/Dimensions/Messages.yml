@@ -1,3 +1,4 @@
+NoPermission: '%prefix% &cYou do not have permission to use this command.'
 Prefix: §7[§cDimensions§7]
 MaxHeightExceededDenyMessage: '%prefix% &cYou cannot build a portal above Y %maxWorldHeight%.'
 DisabledWorldMessage: '%prefix% &cYou cannot build a portal in %world% because its

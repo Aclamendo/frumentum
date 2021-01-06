@@ -139,6 +139,7 @@ world-settings:
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 1
     anti-xray:
+      use-permission: false
       lava-obscures: false
       enabled: false
       engine-mode: 1
@@ -164,6 +165,7 @@ world-settings:
     generator-settings:
       flat-bedrock: false
     game-mechanics:
+      disable-mob-spawner-spawn-egg-transformation: false
       fix-curing-zombie-villager-discount-exploit: true
       nerf-pigmen-from-nether-portals: false
       disable-sprint-interruption-on-attack: false
@@ -197,6 +199,9 @@ world-settings:
     max-growth-height:
       cactus: 4
       reeds: 4
+      bamboo:
+        max: 16
+        min: 11
     hopper:
       cooldown-when-full: true
       disable-move-event: false
@@ -225,3 +230,6 @@ world-settings:
       spawn-chance-failure-increment: 25
       spawn-chance-min: 25
       spawn-chance-max: 75
+    mobs-can-always-pick-up-loot:
+      zombies: false
+      skeletons: false
