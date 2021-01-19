@@ -61,7 +61,6 @@ plugins/dynmap/markers.yml
 plugins/dynmap/perspecives.txt
 plugins/dynmap/shaders.txt
 plugins/dynmap/version.txt
-plugins/dynmap/worlds.txt
 plugins/dynmap/perspectives.txt
 plugins/dynmap/survival.pending
 plugins/dynmap/survival_nether.pending

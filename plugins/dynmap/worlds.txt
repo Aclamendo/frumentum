@@ -1,0 +1,16 @@
+# These are examples of world-specific settings - customize your content as you see fit
+#
+# NOTES:
+#   All lines here are commented with the # symbol - delete the # symbol on copied lines you wish to enable
+#   Definitions of a world made here will superecede any world definition with the same name in configuration.txt
+#   Deleting this file will result in a fresh copy being produced by dynmap.jar on the next startup.
+#
+worlds:
+  - name: survival
+    title: "Overworld"
+  - name: survival_nether
+    title: "Nether"
+  - name: survival_the_end
+    title: "The End"
+  - name: dumb
+    title: "Thunder Mountains"

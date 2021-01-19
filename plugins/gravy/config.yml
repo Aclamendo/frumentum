@@ -34,4 +34,4 @@ worlds_aliases:
 - survival_nether::The Nether
 - survival_the_end::The End
 - dumb::Thunder Mountains
-do_safe_grave_spawn: false
+do_safe_grave_spawn: true
