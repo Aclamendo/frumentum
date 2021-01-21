@@ -42,7 +42,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NETHER
-    seed: '85169648'
+    seed: '6456209723290237050'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
@@ -80,64 +80,17 @@ worlds:
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: -83.48689765796337
-      y: 64.0
-      z: 39.65899245524759
-      pitch: 3.7534325
-      yaw: -217.93922
+      x: -222.54956508697725
+      y: 63.0
+      z: -17.268668445278003
+      pitch: 2.1179798
+      yaw: -331.38437
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '85169648'
+    seed: '6456209723290237050'
     generator: 'null'
-    playerLimit: '-1'
-    allowFlight: 'true'
-  dumb:
-    ==: MVWorld
-    hidden: 'false'
-    alias: Thunder Mountains
-    color: GOLD
-    style: NORMAL
-    pvp: 'true'
-    scale: '1.0'
-    respawnWorld: ''
-    allowWeather: 'true'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-    hunger: 'true'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'true'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: -74.52228893013393
-      y: 76.0
-      z: 54.16958529878134
-      pitch: 8.779549
-      yaw: 156.91368
-    autoLoad: 'true'
-    bedRespawn: 'true'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '-5576187650367069562'
-    generator: DWG_OasisDesert
     playerLimit: '-1'
     allowFlight: 'true'
   survival_the_end:
@@ -183,7 +136,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: THE_END
-    seed: '85169648'
+    seed: '6456209723290237050'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'

@@ -12,13 +12,13 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 84,
+          "weight": 81,
           "quality": -1,
           "name": "minecraft:gameplay/fishing/fish"
         },
 		{
           "type": "minecraft:loot_table",
-          "weight": 5,
+          "weight": 8,
           "quality": 2,
           "name": "minecraft:gameplay/fishing/treasure"
         },

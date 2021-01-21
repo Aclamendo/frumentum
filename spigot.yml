@@ -38,7 +38,7 @@ messages:
   unknown-command: Unknown command
   server-full: The server is full!
   outdated-client: Outdated client! Please use {0}
-  outdated-server: Outdated server! I'm still on {0}
+  outdated-server: Outdated server! Im still on {0}
   restart: Server is restarting
 commands:
   log: true
@@ -144,22 +144,22 @@ world-settings:
       hopper-transfer: 8
       hopper-check: 1
     growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      beetroot-modifier: 100
-      carrot-modifier: 100
-      potato-modifier: 100
-      wheat-modifier: 100
-      netherwart-modifier: 100
-      vine-modifier: 100
-      cocoa-modifier: 100
-      bamboo-modifier: 100
-      sweetberry-modifier: 100
-      kelp-modifier: 100
+      cactus-modifier: 150
+      cane-modifier: 150
+      melon-modifier: 150
+      mushroom-modifier: 150
+      pumpkin-modifier: 150
+      sapling-modifier: 150
+      beetroot-modifier: 150
+      carrot-modifier: 150
+      potato-modifier: 150
+      wheat-modifier: 150
+      netherwart-modifier: 150
+      vine-modifier: 150
+      cocoa-modifier: 150
+      bamboo-modifier: 150
+      sweetberry-modifier: 150
+      kelp-modifier: 150
   worldeditregentempworld:
     verbose: false
 players:

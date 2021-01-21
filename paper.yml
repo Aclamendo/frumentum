@@ -80,6 +80,10 @@ messages:
     authentication-servers-down: Bruh, mojang servers are down
 world-settings:
   default:
+    only-players-collide: false
+    allow-vehicle-collisions: true
+    portal-search-vanilla-dimension-scaling: true
+    max-leash-distance: 10.0
     should-remove-dragon: false
     seed-based-feature-search: true
     fix-climbing-bypassing-cramming-rule: false
@@ -233,3 +237,14 @@ world-settings:
     mobs-can-always-pick-up-loot:
       zombies: false
       skeletons: false
+    entity-per-chunk-save-limit:
+      experience_orb: -1
+      snowball: -1
+      ender_pearl: -1
+      arrow: -1
+    door-breaking-difficulty:
+      zombie:
+      - HARD
+      vindicator:
+      - NORMAL
+      - HARD

@@ -72,7 +72,7 @@ command /help [<text>] [<text>]:
 			set {_MPage} to {@MainPageCount}
 			set {_CPage} to 1
 			send "&e---- &6Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-			send {@dim0}
+#			send {@dim0}
 			send {@imagemap0}
 			send {@link0}
 			send {@meme0}
@@ -86,7 +86,7 @@ command /help [<text>] [<text>]:
 				set {_MPage} to {@MainPageCount}
 				set {_CPage} to 1
 				send "&e---- &6Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-				send {@dim0}
+#				send {@dim0}
 				send {@imagemap0}
 				send {@link0}
 				send {@meme0}
@@ -134,9 +134,9 @@ command /help [<text>] [<text>]:
 				send {@vein1}
 				send {@vein2}
 				send {@vein3}
-			else if arg-1 is "dimension":
-				set {_CPage} to 1
-				send "&e---- &6Dimension Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
-				send {@dim1}
-				send {@dim2}
-				send {@dim3}
+#			else if arg-1 is "dimension":
+#				set {_CPage} to 1
+#				send "&e---- &6Dimension Help &e-- &6Page &c%{_CPage}%&6/&c%{_MPage}% &e----"
+	#			send {@dim1}
+	#			send {@dim2}
+	#			send {@dim3}

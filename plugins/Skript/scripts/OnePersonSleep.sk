@@ -34,9 +34,6 @@ on bed enter:
 		if event-world is "survival":
 			if is raining or thundering in "survival":
 				execute console command "/weather survival sun"
-		else if event-world is "dumb":
-			if is raining or thundering in "dumb":
-				execute console command "/weather dumb sun"
 	else if {NoSleep} is false:
 		cancel event
 		send "&cYou cannot skip the night right now!"
