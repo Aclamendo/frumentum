@@ -42,7 +42,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NETHER
-    seed: '6456209723290237050'
+    seed: '-796140640'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
@@ -80,16 +80,16 @@ worlds:
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: -222.54956508697725
-      y: 63.0
-      z: -17.268668445278003
-      pitch: 2.1179798
-      yaw: -331.38437
+      x: -250.292957428451
+      y: 70.0
+      z: -74.83470994830006
+      pitch: -0.20580885
+      yaw: 13.312561
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '6456209723290237050'
+    seed: '-796140640'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
@@ -136,7 +136,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: THE_END
-    seed: '6456209723290237050'
+    seed: '-796140640'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
