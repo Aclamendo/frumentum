@@ -177,7 +177,7 @@ world-settings:
       disable-player-crits: false
       disable-end-credits: false
       disable-relative-projectile-velocity: false
-      shield-blocking-delay: 1
+      shield-blocking-delay: 0
       scan-for-legacy-ender-dragon: true
       disable-pillager-patrols: false
       disable-unloaded-chunk-enderpearl-exploit: true
