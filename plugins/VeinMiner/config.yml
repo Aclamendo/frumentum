@@ -13,6 +13,17 @@ IncludeEdges: true
 MaxVeinSize: 64
 Cost: 0.0
 
+Client: # Options that allow better control over the optional client-sided mod
+  AllowClientActivation: false # Whether or not to allow the use of VeinMiner4Bukkit
+  DisallowedMessage: # The message to send to clients with the mod installed if AllowClientActivation is disabled. Set to [] to not send a message
+  - "&lHey! &7We have disabled the client-side VeinMiner4Bukkit mod and it cannot be used on this server."
+  - "&7We apologize for the inconvenience."
+  SuggestClientModPeriod: "-1" # The time period to remind players without VeinMiner4Bukkit installed to install it. -1 to not remind, or format: 1w2d3h4m5s
+  SuggestionMessage: # The suggestion message to send
+  - "&lHey! &7This server runs &fVeinMiner&7, therefore we recommend the use of the &fVeinMiner4Bukkit &7Fabric mod."
+  - "&7This mod is optional but allows you to use custom keybinds to activate vein miner!"
+  - "&7Download at: &fhttps://www.curseforge.com/minecraft/mc-mods/veinminer4bukkit"
+
 DisabledWorlds:
 - WorldName
 

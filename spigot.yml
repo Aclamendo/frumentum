@@ -144,22 +144,22 @@ world-settings:
       hopper-transfer: 8
       hopper-check: 1
     growth:
-      cactus-modifier: 150
-      cane-modifier: 150
-      melon-modifier: 150
-      mushroom-modifier: 150
-      pumpkin-modifier: 150
-      sapling-modifier: 150
-      beetroot-modifier: 150
-      carrot-modifier: 150
-      potato-modifier: 150
-      wheat-modifier: 150
-      netherwart-modifier: 150
-      vine-modifier: 150
-      cocoa-modifier: 150
-      bamboo-modifier: 150
-      sweetberry-modifier: 150
-      kelp-modifier: 150
+      cactus-modifier: 350
+      cane-modifier: 350
+      melon-modifier: 350
+      mushroom-modifier: 350
+      sapling-modifier: 350
+      pumpkin-modifier: 350
+      beetroot-modifier: 350
+      carrot-modifier: 350
+      potato-modifier: 350
+      wheat-modifier: 350
+      netherwart-modifier: 350
+      vine-modifier: 350
+      cocoa-modifier: 350
+      bamboo-modifier: 350
+      sweetberry-modifier: 350
+      kelp-modifier: 350
   worldeditregentempworld:
     verbose: false
 players:
