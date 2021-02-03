@@ -18,10 +18,10 @@ bedrock:
   # This option is for the plugin version only.
   clone-remote-port: false
   # The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true
-  motd1: "info.frumentum-mc.net"
-  motd2: "info.frumentum-mc.net"
+  motd1: "info.davidsfatnuts.net"
+  motd2: "info.davidsfatnuts.net"
   # The Server Name that will be sent to Minecraft: Bedrock Edition clients. This is visible in both the pause menu and the settings menu.
-  server-name: "Frumentum"
+  server-name: "Davids Fat Nuts"
 remote:
   # The IP address of the remote (Java Edition) server
   # If it is "auto", for standalone version the remote address will be set to 127.0.0.1,
