@@ -8,7 +8,7 @@ options:
 	doc: "&cServer will reset when 1.17 releases"
 	rules: "Rules exist, because y'all couldn't behave!"
 	cool: ""
-	rick: "&b&nhttp://info.frumentum-mc.net/"
+	rick: "&b&nhttp://info.davidsfatnuts.net/"
 
 on script load:
 	send "&b[Skript] PingMOTD &6{@version} &bLoaded" to console
@@ -16,4 +16,4 @@ on script load:
 on server list ping:
   set {_message::*} to {@changes}, {@doc}, {@cool}, {@rules} and {@rick}
   set {_message} to random element out of {_message::*}
-  set motd to "&bFrumentum &6&lSMP &f|  &dVersion: &b&o&n%minecraft version%&r                          &d&l%{_message}%"
+  set motd to "&bDavids Fat Nuts &6&lSMP &f|  &dVersion: &b&o&n%minecraft version%&r                  &d&l%{_message}%"
