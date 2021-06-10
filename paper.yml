@@ -10,6 +10,7 @@
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
+use-display-name-in-quit-message: false
 verbose: false
 config-version: 20
 settings:
@@ -80,6 +81,10 @@ messages:
     authentication-servers-down: Bruh, mojang servers are down
 world-settings:
   default:
+    ender-dragons-death-always-places-dragon-egg: false
+    update-pathfinding-on-block-update: true
+    fix-wither-targeting-bug: false
+    allow-using-signs-inside-spawn-protection: false
     only-players-collide: false
     allow-vehicle-collisions: true
     portal-search-vanilla-dimension-scaling: true

@@ -3,8 +3,9 @@ Frumentum the codename for a Minecraft server running on Paper. This is a reposi
 
 Server ip: davidsfatnuts.net
 
-I do not claim to own any plugin content, all plugin content is property of thier respective owners. Links to plugin projects will be provided in (plugin manifest may be out of date, if the .jar file is not present the plugin is not in use)
+I do not claim to own any plugin content, all plugin content is property of thier respective owners. Links to plugin projects will be provided the plugin manifest:
 > /plugins/README.md
+(plugin manifest may be out of date, if the .jar file is not present the plugin is not in use)
 
 
 ## Branches
