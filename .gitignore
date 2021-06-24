@@ -11,7 +11,7 @@ version_history.json
 crash-reports/
 debug/
 
-#worldata & playerdata
+#vanilla worldata & playerdata
 survival/advancements/
 survival/data/
 survival/playerdata/
@@ -22,10 +22,12 @@ survival/level.dat
 survival/level.dat_old
 survival/session.lock
 survival/uid.dat
-
+survival/entities/
 survival_nether/
 survival_the_end/
 dumb/
+
+#plugin world & user data
 plugins/Essentials/userdata/
 plugins/Essentials/usermap.csv
 plugins/Essentials/warps/
@@ -35,10 +37,6 @@ plugins/Multiverse-Inventories/groups/
 plugins/gravy/graves.yml
 plugins/gravy/items.yml
 plugins/Dimensions/Portals/portalLocations.json
-
-#plugin files
-plugins/DiscordSRV-Build-1.21.0.jar
-plugins/Dynmap-3.1-beta5-spigot.jar
 
 #plugin data
 plugins/dynmap/dumb.pending

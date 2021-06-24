@@ -72,6 +72,8 @@ settings:
       title: 8192
       author: 8192
       page: 16384
+  loggers:
+    deobfuscate-stacktraces: true
 timings:
   enabled: true
   verbose: true
@@ -162,6 +164,7 @@ world-settings:
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 1
     anti-xray:
+      max-block-height: 64
       use-permission: false
       lava-obscures: false
       enabled: false

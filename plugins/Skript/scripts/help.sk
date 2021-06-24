@@ -35,7 +35,7 @@ options:
 	meme1: "&6/meme&f: Sends a random PSA"
 	meme2: "&6/meme &b<name>&f: Sends a random PSA with the name&7(does not need to be a player)"
 	meme3: "&6/psa &b<message>&f: Sends a PSA of your own&7(compatible with formatting codes)"
-	meme4: "&6/memeidea &b<message&f: Suggests a message to be added to /meme"
+	meme4: "&6/memeidea &b<message>&f: Suggests a message to be added to /meme"
 
 	item0: "&4Itemdata&f: /help itemdata"
 	item1: "&6/itemname &b<newName>&f: Set held items name&7(compatible with formatting codes)"

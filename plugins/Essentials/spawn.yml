@@ -1,8 +1,8 @@
-spawns: 
-  default: 
-    world: survival
-    x: -83.48689765796337
-    y: 64.0
-    z: 39.65899245524759
-    yaw: -217.93922
-    pitch: 3.7534325
+spawns:
+  default:
+    world: c3e3d95d-39b6-4e10-a8e5-c72d7031a9ae
+    x: 352.5
+    y: 103.0
+    z: 556.5
+    yaw: -180.0
+    pitch: 0.0
